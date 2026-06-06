@@ -1,0 +1,222 @@
+src/
+├── app/
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── router/
+│   │   ├── index.tsx
+│   │   ├── public.routes.tsx
+│   │   ├── auth.routes.tsx
+│   │   └── admin.routes.tsx
+│   ├── providers/
+│   │   ├── StoreProvider.tsx
+│   │   ├── ThemeProvider.tsx
+│   │   └── ErrorBoundaryProvider.tsx
+│   └── styles/
+│       ├── globals.css
+│       └── theme.css
+│
+├── pages/
+│   ├── home/
+│   │   └── index.tsx
+│   ├── plants/
+│   │   ├── list/
+│   │   │   └── index.tsx
+│   │   └── detail/
+│   │       └── index.tsx
+│   ├── oils/
+│   │   ├── list/
+│   │   │   └── index.tsx
+│   │   └── detail/
+│   │       └── index.tsx
+│   ├── blog/
+│   │   ├── list/
+│   │   │   └── index.tsx
+│   │   └── article/
+│   │       └── index.tsx
+│   ├── favorites/
+│   │   └── index.tsx
+│   ├── auth/
+│   │   ├── login/
+│   │   │   └── index.tsx
+│   │   └── register/
+│   │       └── index.tsx
+│   ├── legal/
+│   │   ├── about/
+│   │   │   └── index.tsx
+│   │   ├── contact/
+│   │   │   └── index.tsx
+│   │   ├── legal-notice/
+│   │   │   └── index.tsx
+│   │   ├── privacy/
+│   │   │   └── index.tsx
+│   │   └── disclaimer/
+│   │       └── index.tsx
+│   └── admin/
+│       ├── dashboard/
+│       │   └── index.tsx
+│       ├── plants/
+│       │   └── index.tsx
+│       ├── oils/
+│       │   └── index.tsx
+│       ├── articles/
+│       │   └── index.tsx
+│       ├── affiliate-products/
+│       │   └── index.tsx
+│       ├── users/
+│       │   └── index.tsx
+│       └── analytics/
+│           └── index.tsx
+│
+├── widgets/
+│   ├── navbar/
+│   │   └── index.tsx
+│   ├── footer/
+│   │   └── index.tsx
+│   ├── main-layout/
+│   │   └── index.tsx
+│   ├── admin-layout/
+│   │   └── index.tsx
+│   ├── search-bar/
+│   │   └── index.tsx
+│   ├── filters/
+│   │   └── index.tsx
+│   └── pagination/
+│       └── index.tsx
+│
+├── features/
+│   ├── auth/
+│   │   ├── login/
+│   │   │   ├── ui/
+│   │   │   │   └── LoginForm.tsx
+│   │   │   └── model/
+│   │   │       └── useLogin.ts
+│   │   ├── register/
+│   │   │   ├── ui/
+│   │   │   │   └── RegisterForm.tsx
+│   │   │   └── model/
+│   │   │       └── useRegister.ts
+│   │   └── session/
+│   │       ├── model/
+│   │       │   ├── authStore.ts
+│   │       │   └── useAuth.ts
+│   │       └── ui/
+│   │           └── ProtectedRoute.tsx
+│   │
+│   ├── favorites/
+│   │   ├── add-remove/
+│   │   │   ├── model/
+│   │   │   │   └── useToggleFavorite.ts
+│   │   │   └── ui/
+│   │   │       └── FavoriteButton.tsx
+│   │   ├── list/
+│   │   │   ├── api/
+│   │   │   │   └── favoritesApi.ts
+│   │   │   ├── model/
+│   │   │   │   ├── favoritesStore.ts
+│   │   │   │   └── useFavorites.ts
+│   │   │   └── ui/
+│   │   │       └── FavoritesList.tsx
+│   │   └── check/
+│   │       └── model/
+│   │           └── useIsFavorite.ts
+│   │
+│   ├── plant-search/
+│   │   ├── model/
+│   │   │   └── usePlantSearch.ts
+│   │   └── ui/
+│   │       └── PlantSearchPanel.tsx
+│   │
+│   ├── oil-search/
+│   │   ├── model/
+│   │   │   └── useOilSearch.ts
+│   │   └── ui/
+│   │       └── OilSearchPanel.tsx
+│   │
+│   ├── affiliate-click/
+│   │   ├── api/
+│   │   │   └── affiliateClickApi.ts
+│   │   └── model/
+│   │       └── useAffiliateTracking.ts
+│   │
+│   └── consent/
+│       ├── model/
+│       │   └── useConsent.ts
+│       └── ui/
+│           └── ConsentBanner.tsx
+│
+├── entities/
+│   ├── plant/
+│   │   ├── api/
+│   │   │   └── plantApi.ts
+│   │   ├── model/
+│   │   │   ├── types.ts
+│   │   │   ├── plantsStore.ts
+│   │   │   └── usePlants.ts
+│   │   └── ui/
+│   │       └── PlantCard.tsx
+│   │
+│   ├── oil/
+│   │   ├── api/
+│   │   │   └── oilApi.ts
+│   │   ├── model/
+│   │   │   ├── types.ts
+│   │   │   ├── oilsStore.ts
+│   │   │   └── useOils.ts
+│   │   └── ui/
+│   │       └── OilCard.tsx
+│   │
+│   ├── article/
+│   │   ├── api/
+│   │   │   └── articleApi.ts
+│   │   ├── model/
+│   │   │   └── types.ts
+│   │   └── ui/
+│   │       └── ArticleCard.tsx
+│   │
+│   ├── affiliate-product/
+│   │   ├── api/
+│   │   │   └── affiliateApi.ts
+│   │   ├── model/
+│   │   │   └── types.ts
+│   │   └── ui/
+│   │       └── ProductAffiliateCard.tsx
+│   │
+│   ├── favorite/
+│   │   └── model/
+│   │       └── types.ts
+│   │
+│   └── user/
+│       └── model/
+│           └── types.ts
+│
+├── shared/
+│   ├── api/
+│   │   └── apiClient.ts
+│   ├── ui/
+│   │   ├── Button.tsx
+│   │   ├── Input.tsx
+│   │   ├── Modal.tsx
+│   │   ├── LoadingSpinner.tsx
+│   │   └── ErrorBoundary.tsx
+│   ├── lib/
+│   │   ├── fetcher.ts
+│   │   ├── storage.ts
+│   │   ├── jwt.ts
+│   │   ├── analytics.ts
+│   │   ├── helpers.ts
+│   │   ├── seo.ts
+│   │   └── validation.ts
+│   ├── config/
+│   │   ├── api.ts
+│   │   ├── env.ts
+│   │   ├── theme.ts
+│   │   └── routes.ts
+│   ├── constants/
+│   │   ├── colors.ts
+│   │   ├── endpoints.ts
+│   │   ├── roles.ts
+│   │   └── seo.ts
+│   ├── assets/
+│   │   └── images/
+│   └── types/
+│       └── api-response.ts

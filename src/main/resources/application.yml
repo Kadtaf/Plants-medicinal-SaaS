@@ -1,0 +1,140 @@
+# ===========================================
+# SECTION GLOBALE (commune à tous les profils)
+# ===========================================
+spring:
+  application:
+    name: api
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+
+server:
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain
+
+# ===========================================
+# PROFIL DEV
+# ===========================================
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+  flyway:
+    enabled: false   # Flyway désactivé pour éviter les conflits
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/api_dev
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # Hibernate crée/maj les tables
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    defer-datasource-initialization: true   # IMPORTANT pour exécuter data.sql APRÈS Hibernate
+
+  sql:
+    init:
+      mode: always        # Exécute data.sql à chaque démarrage
+      data-locations: classpath:data.sql
+
+  cache:
+    type: caffeine
+    caffeine:
+      spec: maximumSize=100,expireAfterWrite=10m
+
+server:
+  port: 8080
+
+jwt:
+  secret: ${JWT_SECRET:mySecretKeyForJWTTokenGenerationThatIsAtLeast256BitsLong12345}
+  access-token-expiration: 900000
+  refresh-token-expiration: 86400000
+
+rate-limit:
+  enabled: false
+
+cors:
+  allowed-origins: "*"
+  allowed-methods: GET,POST,PUT,DELETE,OPTIONS
+  allowed-headers: "*"
+  max-age: 3600
+
+affiliate:
+  tracking:
+    enabled: true
+
+# ===========================================
+# PROFIL PROD
+# ===========================================
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+  flyway:
+    enabled: true   # En production, Flyway peut être activé si tu veux versionner la DB
+
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:5432/${DB_NAME:api_prod}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+
+  cache:
+    type: redis
+    redis:
+      time-to-live: 600000
+
+server:
+  port: ${PORT:8080}
+
+logging:
+  level:
+    org:
+      springframework: INFO
+      springdoc: DEBUG
+    com:
+      plants: DEBUG
+    root: INFO
+    org.springframework.security: DEBUG
+    com.plants.api: DEBUG
+
+  pattern:
+    console: "%d{HH:mm:ss} %-5level [%thread] %logger{36} - %msg%n"
+
+  file:
+    name: logs/api-dev.log
+    path: logs
+
+jwt:
+  secret: ${JWT_SECRET}
+  access-token-expiration: 900000
+  refresh-token-expiration: 86400000
+
+rate-limit:
+  enabled: true
+  requests-per-minute: 100
+
+cors:
+  allowed-origins: "*"
+  allowed-methods: GET,POST,PUT,DELETE,OPTIONS
+  allowed-headers: "*"
+  max-age: 3600
+
+affiliate:
+  tracking:
+    enabled: true

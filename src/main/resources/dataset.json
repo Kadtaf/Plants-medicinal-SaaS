@@ -1,0 +1,331 @@
+{
+  "plants": [
+    {
+      "id": 1,
+      "name": "Lavande",
+      "description": "Plante médicinale reconnue pour ses propriétés calmantes et antiseptiques.",
+      "origin": "Méditerranée",
+      "seasonFound": "Été",
+      "properties": ["Calmante", "Antiseptique", "Anti-inflammatoire"],
+      "uses": ["Infusion relaxante", "Huile essentielle", "Soin de la peau"],
+      "imageUrl": "https://example.com/lavande.jpg",
+      "affiliateLink": "https://amazon.fr/lavande"
+    },
+    {
+      "id": 2,
+      "name": "Menthe poivrée",
+      "description": "Plante aromatique utilisée pour la digestion et la respiration.",
+      "origin": "Europe",
+      "seasonFound": "Été",
+      "properties": ["Digestive", "Tonique", "Antispasmodique"],
+      "uses": ["Infusion digestive", "Huile essentielle", "Inhalation"],
+      "imageUrl": "https://example.com/menthe.jpg",
+      "affiliateLink": "https://amazon.fr/menthe"
+    },
+    {
+      "id": 3,
+      "name": "Camomille",
+      "description": "Plante douce utilisée pour apaiser le stress et favoriser le sommeil.",
+      "origin": "Europe",
+      "seasonFound": "Printemps",
+      "properties": ["Calmante", "Digestive", "Anti-inflammatoire"],
+      "uses": ["Infusion", "Compresses", "Cosmétiques"],
+      "imageUrl": "https://example.com/camomille.jpg",
+      "affiliateLink": "https://amazon.fr/camomille"
+    },
+    {
+      "id": 4,
+      "name": "Thym",
+      "description": "Plante antiseptique puissante utilisée pour les infections respiratoires.",
+      "origin": "Méditerranée",
+      "seasonFound": "Printemps",
+      "properties": ["Antiseptique", "Expectorant", "Tonique"],
+      "uses": ["Infusion", "Inhalation", "Cuisine"],
+      "imageUrl": "https://example.com/thym.jpg",
+      "affiliateLink": "https://amazon.fr/thym"
+    },
+    {
+      "id": 5,
+      "name": "Romarin",
+      "description": "Plante tonique et stimulante, excellente pour la mémoire et la digestion.",
+      "origin": "Méditerranée",
+      "seasonFound": "Printemps",
+      "properties": ["Stimulant", "Digestif", "Antioxydant"],
+      "uses": ["Infusion", "Huile essentielle", "Cuisine"],
+      "imageUrl": "https://example.com/romarin.jpg",
+      "affiliateLink": "https://amazon.fr/romarin"
+    },
+    {
+      "id": 6,
+      "name": "Aloe Vera",
+      "description": "Plante succulente utilisée pour hydrater et réparer la peau.",
+      "origin": "Afrique",
+      "seasonFound": "Toute l'année",
+      "properties": ["Hydratante", "Cicatrisante", "Anti-inflammatoire"],
+      "uses": ["Gel cutané", "Cosmétiques", "Soin des brûlures"],
+      "imageUrl": "https://example.com/aloe.jpg",
+      "affiliateLink": "https://amazon.fr/aloe"
+    },
+    {
+      "id": 7,
+      "name": "Gingembre",
+      "description": "Racine stimulante utilisée pour la digestion et l'immunité.",
+      "origin": "Asie",
+      "seasonFound": "Hiver",
+      "properties": ["Stimulant", "Digestif", "Anti-nauséeux"],
+      "uses": ["Infusion", "Cuisine", "Compléments"],
+      "imageUrl": "https://example.com/gingembre.jpg",
+      "affiliateLink": "https://amazon.fr/gingembre"
+    },
+    {
+      "id": 8,
+      "name": "Curcuma",
+      "description": "Plante anti-inflammatoire puissante grâce à la curcumine.",
+      "origin": "Inde",
+      "seasonFound": "Hiver",
+      "properties": ["Anti-inflammatoire", "Antioxydant", "Digestif"],
+      "uses": ["Cuisine", "Compléments", "Infusion"],
+      "imageUrl": "https://example.com/curcuma.jpg",
+      "affiliateLink": "https://amazon.fr/curcuma"
+    },
+    {
+      "id": 9,
+      "name": "Eucalyptus",
+      "description": "Plante respiratoire par excellence, utilisée en inhalation.",
+      "origin": "Australie",
+      "seasonFound": "Été",
+      "properties": ["Expectorant", "Antiseptique", "Décongestionnant"],
+      "uses": ["Inhalation", "Huile essentielle", "Infusion"],
+      "imageUrl": "https://example.com/eucalyptus.jpg",
+      "affiliateLink": "https://amazon.fr/eucalyptus"
+    },
+    {
+      "id": 10,
+      "name": "Ortie",
+      "description": "Plante reminéralisante riche en fer et en vitamines.",
+      "origin": "Europe",
+      "seasonFound": "Printemps",
+      "properties": ["Reminéralisante", "Anti-inflammatoire", "Dépurative"],
+      "uses": ["Infusion", "Soupe", "Compléments"],
+      "imageUrl": "https://example.com/ortie.jpg",
+      "affiliateLink": "https://amazon.fr/ortie"
+    },
+
+
+    {
+      "id": 11,
+      "name": "Sauge",
+      "description": "Plante purifiante et digestive, utilisée depuis l'Antiquité.",
+      "origin": "Europe",
+      "seasonFound": "Été",
+      "properties": ["Purifiante", "Digestive", "Tonique"],
+      "uses": ["Infusion", "Cuisine", "Huile essentielle"],
+      "imageUrl": "https://example.com/sauge.jpg",
+      "affiliateLink": "https://amazon.fr/sauge"
+    },
+    {
+      "id": 12,
+      "name": "Basilic sacré",
+      "description": "Plante ayurvédique sacrée, adaptogène et anti-stress.",
+      "origin": "Inde",
+      "seasonFound": "Été",
+      "properties": ["Adaptogène", "Anti-stress", "Tonique"],
+      "uses": ["Infusion", "Compléments", "Huile essentielle"],
+      "imageUrl": "https://example.com/basilic.jpg",
+      "affiliateLink": "https://amazon.fr/basilic"
+    },
+    {
+      "id": 13,
+      "name": "Mélisse",
+      "description": "Plante calmante et digestive, idéale contre l'anxiété.",
+      "origin": "Europe",
+      "seasonFound": "Été",
+      "properties": ["Calmante", "Digestive", "Anti-anxiété"],
+      "uses": ["Infusion", "Huile essentielle", "Cosmétiques"],
+      "imageUrl": "https://example.com/melisse.jpg",
+      "affiliateLink": "https://amazon.fr/melisse"
+    },
+    {
+      "id": 14,
+      "name": "Valériane",
+      "description": "Plante sédative naturelle utilisée pour le sommeil.",
+      "origin": "Europe",
+      "seasonFound": "Automne",
+      "properties": ["Sédative", "Relaxante", "Sommeil"],
+      "uses": ["Infusion", "Compléments", "Huile essentielle"],
+      "imageUrl": "https://example.com/valeriane.jpg",
+      "affiliateLink": "https://amazon.fr/valeriane"
+    },
+    {
+      "id": 15,
+      "name": "Ginseng",
+      "description": "Racine tonique et énergisante, utilisée en médecine chinoise.",
+      "origin": "Corée",
+      "seasonFound": "Hiver",
+      "properties": ["Tonique", "Énergisante", "Stimulante"],
+      "uses": ["Compléments", "Infusion", "Cuisine"],
+      "imageUrl": "https://example.com/ginseng.jpg",
+      "affiliateLink": "https://amazon.fr/ginseng"
+    },
+    {
+      "id": 16,
+      "name": "Passiflore",
+      "description": "Plante calmante utilisée contre le stress et l'insomnie.",
+      "origin": "Amérique du Sud",
+      "seasonFound": "Été",
+      "properties": ["Calmante", "Apaisante", "Anti-stress"],
+      "uses": ["Infusion", "Compléments", "Huile essentielle"],
+      "imageUrl": "https://example.com/passiflore.jpg",
+      "affiliateLink": "https://amazon.fr/passiflore"
+    },
+    {
+      "id": 17,
+      "name": "Fenouil",
+      "description": "Plante digestive et antispasmodique.",
+      "origin": "Méditerranée",
+      "seasonFound": "Printemps",
+      "properties": ["Digestive", "Antispasmodique", "Détoxifiante"],
+      "uses": ["Infusion", "Cuisine", "Compléments"],
+      "imageUrl": "https://example.com/fenouil.jpg",
+      "affiliateLink": "https://amazon.fr/fenouil"
+    },
+    {
+      "id": 18,
+      "name": "Calendula",
+      "description": "Plante cicatrisante et anti-inflammatoire.",
+      "origin": "Europe",
+      "seasonFound": "Été",
+      "properties": ["Cicatrisante", "Anti-inflammatoire", "Apaisante"],
+      "uses": ["Cosmétiques", "Baumes", "Infusion"],
+      "imageUrl": "https://example.com/calendula.jpg",
+      "affiliateLink": "https://amazon.fr/calendula"
+    },
+    {
+      "id": 19,
+      "name": "Arnica",
+      "description": "Plante anti-hématome et anti-inflammatoire.",
+      "origin": "Europe",
+      "seasonFound": "Été",
+      "properties": ["Anti-hématome", "Anti-inflammatoire", "Apaisante"],
+      "uses": ["Baumes", "Compresses", "Crèmes"],
+      "imageUrl": "https://example.com/arnica.jpg",
+      "affiliateLink": "https://amazon.fr/arnica"
+    },
+    {
+      "id": 20,
+      "name": "Réglisse",
+      "description": "Plante adoucissante et anti-inflammatoire.",
+      "origin": "Asie",
+      "seasonFound": "Printemps",
+      "properties": ["Adoucissante", "Anti-inflammatoire", "Protectrice"],
+      "uses": ["Infusion", "Compléments", "Sirop"],
+      "imageUrl": "https://example.com/reglisse.jpg",
+      "affiliateLink": "https://amazon.fr/reglisse"
+    }
+  ],
+
+  "oils": [
+    {
+      "id": 1,
+      "name": "Huile essentielle de Lavande",
+      "description": "Huile calmante et apaisante, idéale pour le sommeil et la peau.",
+      "benefits": ["Calmante", "Relaxante", "Apaisante"],
+      "precautions": ["Éviter le contact avec les yeux", "Déconseillée aux femmes enceintes"],
+      "imageUrl": "https://example.com/huile-lavande.jpg",
+      "affiliateLink": "https://amazon.fr/huile-lavande",
+      "plantId": 1
+    },
+
+
+    {
+      "id": 20,
+      "name": "Huile de Réglisse",
+      "description": "Huile adoucissante et anti-inflammatoire.",
+      "benefits": ["Adoucissante", "Anti-inflammatoire", "Protectrice"],
+      "precautions": ["Déconseillée en cas d’hypertension"],
+      "imageUrl": "https://example.com/huile-reglisse.jpg",
+      "affiliateLink": "https://amazon.fr/huile-reglisse",
+      "plantId": 20
+    }
+  ],
+
+  "articles": [
+    {
+      "id": 1,
+      "title": "Les bienfaits de la lavande pour le sommeil",
+      "slug": "bienfaits-lavande-sommeil",
+      "content": "La lavande est l’une des plantes les plus utilisées pour favoriser la détente...",
+      "category": "Plantes médicinales",
+      "readTime": 4,
+      "imageUrl": "https://example.com/article-lavande.jpg"
+    },
+
+
+
+    {
+      "id": 10,
+      "title": "Ortie : une plante riche en minéraux",
+      "slug": "ortie-mineraux",
+      "content": "L’ortie est une plante reminéralisante riche en fer, calcium et vitamines...",
+      "category": "Nutrition",
+      "readTime": 4,
+      "imageUrl": "https://example.com/article-ortie.jpg"
+    }
+  ],
+
+  "affiliateProducts": [
+    {
+      "id": 1,
+      "name": "Huile essentielle de Lavande Bio 10ml",
+      "url": "https://amazon.fr/huile-lavande",
+      "vendor": "Amazon",
+      "imageUrl": "https://example.com/prod-lavande.jpg",
+      "price": 8.99,
+      "category": "Huiles essentielles",
+      "associatedPlantId": 1
+    },
+
+
+
+    {
+      "id": 10,
+      "name": "Ortie Bio – Complément alimentaire",
+      "url": "https://amazon.fr/ortie-bio",
+      "vendor": "Amazon",
+      "imageUrl": "https://example.com/prod-ortie.jpg",
+      "price": 14.99,
+      "category": "Compléments",
+      "associatedPlantId": 10
+    }
+  ],
+
+  "favorites": [
+    { "id": 1, "userId": 1, "targetId": 1, "type": "PLANT", "pinned": false },
+    { "id": 2, "userId": 1, "targetId": 2, "type": "PLANT", "pinned": false },
+
+
+
+    { "id": 30, "userId": 3, "targetId": 18, "type": "OIL", "pinned": false }
+  ],
+
+  "comments": [
+    {
+      "id": 1,
+      "userId": 1,
+      "targetId": 1,
+      "type": "PLANT",
+      "content": "La lavande m’aide vraiment à mieux dormir.",
+      "visible": false
+    },
+
+
+    {
+      "id": 50,
+      "userId": 2,
+      "targetId": 20,
+      "type": "OIL",
+      "content": "Huile de réglisse adoucissante.",
+      "visible": false
+    }
+  ]
+}

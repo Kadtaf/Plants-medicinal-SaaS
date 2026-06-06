@@ -1,0 +1,55 @@
+backend/
+├── src/main/java/com/plants/api/
+│   ├── config/
+│   ├── security/
+│   ├── controllers/
+│   ├── services/
+│   ├── repositories/
+│   ├── dto/
+│   ├── mappers/
+│   ├── entities/
+│   ├── exceptions/
+│   ├── utils/
+│   └── admin/
+│
+frontend/
+├── public/
+│   ├── index.html
+│   ├── robots.txt
+│   ├── sitemap.xml
+│   └── favicon.ico
+│
+├── src/
+│   ├── components/
+│   │   ├── common/
+│   │   ├── layout/
+│   │   ├── ui/
+│   │   ├── auth/
+│   │   └── admin/
+│   │
+│   ├── pages/
+│   │   ├── public/
+│   │   ├── auth/
+│   │   └── user/
+│   │
+│   ├── admin/
+│   │   ├── Dashboard.jsx
+│   │   ├── PlantsManagement.jsx
+│   │   └── ...
+│   │
+│   ├── hooks/
+│   ├── store/
+│   ├── api/
+│   ├── utils/
+│   ├── tracking/
+│   ├── styles/
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+│
+├── package.json
+├── vite.config.ts
+├── tailwind.config.js
+└── .env

@@ -1,0 +1,45 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:5432/${DB_NAME:api_prod}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+
+  cache:
+    type: redis
+    redis:
+      time-to-live: 600000
+
+server:
+  port: ${PORT:8080}
+
+logging:
+  level:
+    com.plants.api: INFO
+    org.springframework.security: WARN
+  file:
+    name: /plants-medicinales-SaaS/logs/api.log
+
+jwt:
+  secret: ${JWT_SECRET}
+  access-token-expiration: 900000
+  refresh-token-expiration: 86400000
+
+rate-limit:
+  enabled: true
+  requests-per-minute: 100
+
+cors:
+  allowed-origins: https://yourdomain.com
+  allowed-methods: GET,POST,PUT,DELETE,OPTIONS
+  allowed-headers: "*"
+  max-age: 3600
+
+affiliate:
+  tracking:
+    enabled: true
